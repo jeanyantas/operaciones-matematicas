@@ -1,0 +1,25 @@
+{% extends 'systemoperator/layout.html' %}
+
+{% block content %}
+
+<div class="col-md-4 offset-md-4">
+    <div class="card card-body p-5" style = "background-color: #121212";>
+
+        <h4>Calcular Número Primo</h4>
+
+        <form action="rPrimo">
+
+            <label for="num">Ingrese un número mayor a 1:</label>
+            <input class="btn btn-light" type="number" name="num" id="num" min="2" required/>
+            <br><br>
+            <button class="btn btn-light">Submit</button>
+        </form>
+
+    </div>
+</div>
+
+<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+    <a class="btn btn-light me-md-2" href="/">Atrás</a>
+</div>
+
+{% endblock %}
